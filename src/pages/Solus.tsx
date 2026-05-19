@@ -13,13 +13,8 @@ export default function SolusDetails() {
         
         <div className="prose prose-solus max-w-none space-y-12">
           <div className="bg-solus-accent p-16 text-white">
-             <div className="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-10">Filosofi</div>
-             <h2 className="text-5xl font-serif mb-10 text-white">Människan i centrum</h2>
-             <p className="text-gray-300 leading-relaxed font-light mb-8 text-2xl max-w-2xl">
-               Solus är designad för att vara en "mellan-yta". När världen känns för stor eller för tyst, finns Solus där för att initiera de små samtalen som ofta är grundstenen i mänsklig gemenskap.
-             </p>
-             <p className="text-gray-300 leading-relaxed font-light text-2xl">
-               Designen vilar på tre pelare: <span className="text-white font-medium">Närvaro</span>, <span className="text-white font-medium">Trygghet</span> och <span className="text-white font-medium">Inkludering</span>.
+             <p className="leading-relaxed font-light text-2xl md:text-3xl max-w-3xl">
+               Ofrivillig ensamhet och social isolering är ett växande problem som har allvarliga konsekvenser för både den psykiska och fysiska hälsan. Att ta sig ur ensamhet på egen hand kan kännas övermäktigt. Solus sänker tröskeln för att hjälpa dig ta det allra första steget mot förändring.
              </p>
           </div>
 
@@ -33,8 +28,18 @@ export default function SolusDetails() {
               </div>
               <div className="space-y-6 md:pt-16">
                 <p className="text-xl text-solus-muted font-light leading-relaxed">
-                  För att uppnå detta integreras handlingsplanen EASE, som vägleder användaren genom en strukturerad och stegvis social exponering. Solus är utformat för att fungera som en coach snarare än en kompanjon eller följeslagare. Systemets framgång mäts helt i användarens förmåga att till slut bygga upp tillräckligt med mod för det initiala steget mot att söka äkta, mänsklig gemenskap i det verkliga livet.
+                  För att uppnå detta integreras handlingsplanen EASE, som vägleder användaren genom en strukturerad och stegvis social exponering. Solus är utformat för att fungera som en coach snarare än en kompanjon eller följeslagare. Målet är att användaren, efter en tids användning, ska ha stärkt sin sociala gemenskap och på så sätt inte längre ha behov av Solus.
                 </p>
+              </div>
+            </div>
+
+            <div className="mt-16 bg-white p-12 rounded-none border border-solus-accent/10">
+              <h3 className="text-2xl font-bold mb-8 text-solus-accent tracking-widest">EASE</h3>
+              <div className="space-y-6 text-lg leading-relaxed text-solus-muted font-light">
+                <p><span className="font-bold text-solus-accent">E: Extend yourself.</span> Ta första steget till kontakt genom att hälsa, småprata och ha ögonkontakt med andra människor.</p>
+                <p><span className="font-bold text-solus-accent">A: Action plan.</span> Fundera ut sammanhang där du kan träffa likasinnade och sök dig till dem, exempelvis en kör eller förening.</p>
+                <p><span className="font-bold text-solus-accent">S: Selection.</span> Välj vilka du vill bli vän med och investera i detta fåtal.</p>
+                <p><span className="font-bold text-solus-accent">E: Expect the best.</span> Utgå från att människor omkring dig vill dig väl.</p>
               </div>
             </div>
           </div>

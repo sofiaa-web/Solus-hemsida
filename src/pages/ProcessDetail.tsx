@@ -567,7 +567,7 @@ const stepContent: Record<string, StepContent> = {
   },
   "03": {
     title: "03",
-    subtitle: "Resultat och reflektion",
+    subtitle: "Resultat",
     body: "De sista 5 procenten utgör en avgörande del av upplevelsen. Mikromotioner, typografiska hierarkier och laddningstider justeras för en sömlös upplevelse.",
     sections: [
       {

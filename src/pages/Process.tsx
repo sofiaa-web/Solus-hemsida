@@ -67,8 +67,8 @@ const steps = [
     link: "/tester"
   },
   {
-    title: "Resultat och reflektion",
-    desc: "Slutgiltig justering av detaljer och förberedelse för lansering.",
+    title: "Resultat",
+    desc: "Solus utvecklades inledningsvis med hjälp av Google AI Studio och förfinades sedan iterativt direkt i GitHub. Solus är publicerad via Vercel och är integrerad med Groqs API.",
     details: "Finslipning av mikromotioner och visuell hierarki för att säkerställa högsta kvalitet.",
     link: "/process/03"
   }
@@ -157,15 +157,17 @@ export default function Process() {
                       </div>
                     </div>
                   )}
-                  <div className="flex justify-end pt-2">
-                    <Link 
-                      to={step.link}
-                      className="inline-flex items-center gap-2 group text-solus-accent hover:text-solus-text transition-colors"
-                    >
-                      <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Läs mer</span>
-                      <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </div>
+                  {step.title !== "Syfte och koncept" && (
+                    <div className="flex justify-end pt-2">
+                      <Link 
+                        to={step.link}
+                        className="inline-flex items-center gap-2 group text-solus-accent hover:text-solus-text transition-colors"
+                      >
+                        <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Läs mer</span>
+                        <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </div>
+                  )}
                 </div>
               </Section>
             )}
