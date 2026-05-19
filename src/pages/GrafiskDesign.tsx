@@ -3,135 +3,90 @@ import { motion } from "motion/react";
 
 export default function GrafiskDesign() {
   const colors = [
-    { 
-      name: "Bakgrund", 
-      hex: "#FDFCF9", 
-      class: "bg-solus-bg", 
-      border: "border border-solus-accent/10" 
-    },
-    { 
-      name: "Accent", 
-      hex: "#3A2B22", 
-      class: "bg-solus-accent" 
-    },
-    { 
-      name: "Text", 
-      hex: "#1A1A1A", 
-      class: "bg-solus-text" 
-    },
-    { 
-      name: "Kontrast", 
-      hex: "#FFFFFF", 
-      class: "bg-white", 
-      border: "border border-solus-accent/10" 
-    }
+    { name: "Solus Text", hex: "#1A1A1A", desc: "Används för rubriker och brödtext för maximal läsbarhet." },
+    { name: "Solus Accent", hex: "#D4A373", desc: "En varm, jordnära ton som guidar användaren och markerar interaktion." },
+    { name: "Solus Background", hex: "#FAF9F6", desc: "En mjuk benvit nyans som minskar ögontrötthet." },
+    { name: "Solus Muted", hex: "#707070", desc: "Används för sekundär information och hjälptexter." },
   ];
 
   return (
     <PageLayout>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-      >
-        {/* Header Section */}
-        <Section className="pt-24 pb-12">
-          <div className="max-w-4xl">
-            <h1 className="text-7xl md:text-9xl font-serif text-solus-text mb-8">
-              Grafisk Profil<span className="text-solus-accent">.</span>
-            </h1>
-          </div>
-        </Section>
+      <Section className="mb-20">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h1 className="text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">
+            Grafisk identitet<span className="text-solus-accent">.</span>
+          </h1>
+          <p className="text-2xl text-solus-muted font-light leading-relaxed max-w-2xl">
+            En visuell balans mellan teknisk precision och mänsklig empati.
+          </p>
+        </motion.div>
+      </Section>
 
-        {/* Colors Section */}
-        <Section className="py-24 border-t border-solus-accent/5">
-          <div className="max-w-3xl mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif mb-8 text-solus-text">Färger</h2>
-            <p className="text-lg text-solus-muted leading-relaxed font-light">
-              Färgpaletten för Solus är framtagen för att skapa en visuell miljö som andas lugn och empati. 
-              De varma tonerna i bakgrunden möter den djupa accentfärgen för att skapa en tidlös känsla.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {colors.map((color, i) => (
-              <div key={i} className="group">
-                <div className={`aspect-square rounded-sm mb-4 ${color.class} ${color.border || ""}`} />
-                <div className="space-y-1">
-                  <div className="text-xs font-bold uppercase tracking-widest text-solus-text">{color.name}</div>
-                  <div className="text-xs font-mono text-solus-muted">{color.hex}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Section>
-
-        {/* Typography Section - Redesigned Specimen */}
-        <Section className="py-24 border-t border-solus-accent/5 pb-48">
-          <div className="max-w-3xl mb-24">
-            <h2 className="text-4xl md:text-5xl font-serif mb-8 text-solus-text">Typografi</h2>
-            <p className="text-lg text-solus-muted leading-relaxed font-light">
-              Hierarki mellan typsnitt skapar riktning och tydlighet i upplevelsen. En klassisk karaktär kombineras med ett modernt uttryck för högsta möjliga tillgänglighet.
-            </p>
-          </div>
-
-          <div className="space-y-32">
-            {/* Serif Display */}
-            <div className="relative">
-              <div className="absolute -top-12 left-0 text-[10px] font-bold uppercase tracking-[0.3em] text-solus-accent">Rubriker</div>
-              <div className="grid md:grid-cols-12 gap-12 items-end border-b border-solus-accent/10 pb-16">
-                <div className="md:col-span-8">
-                  <span className="text-7xl md:text-[140px] font-serif font-light leading-none text-solus-text">Aa</span>
-                  <p className="text-4xl md:text-6xl font-serif font-light text-solus-muted mt-8 leading-tight">
-                    Cormorant Garamond används för att förmedla auktoritet, värme och mänsklig närvaro.
-                  </p>
-                </div>
-                <div className="md:col-span-4 space-y-4">
-                  <p className="text-sm font-bold text-solus-text uppercase tracking-widest">Cormorant Garamond</p>
-                  <p className="text-sm font-light text-solus-muted leading-relaxed">
-                    Ett typsnitt som tar plats utan att skrika, perfekt för att sätta tonen i emotionella sammanhang.
-                  </p>
-                </div>
-              </div>
+      <div className="space-y-32 mb-32">
+        <Section id="typography" className="scroll-mt-32 pt-12 border-t border-solus-accent/10">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-4xl font-serif text-solus-text mb-6">Typografi</h2>
+              <p className="text-lg text-solus-muted font-light leading-relaxed mb-8">
+                Valet av typografi är fundamentalt för Solus röst. Genom att kombinera en klassisk serif med en modern sans-serif skapas en känsla av både expertis och tillgänglighet.
+              </p>
             </div>
-
-            {/* Sans Specimen */}
-            <div className="relative">
-              <div className="absolute -top-12 left-0 text-[10px] font-bold uppercase tracking-[0.3em] text-solus-accent">Funktionell text</div>
-              <div className="grid md:grid-cols-12 gap-12 items-end border-b border-solus-accent/10 pb-16">
-                <div className="md:col-span-8">
-                  <span className="text-7xl md:text-[140px] font-sans font-light text-solus-text leading-none">Aa</span>
-                  <p className="text-4xl md:text-6xl font-sans font-light text-solus-muted mt-8 leading-tight">
-                    Inter är ryggraden i den digitala läsbarheten och det moderna uttrycket.
-                  </p>
-                </div>
-                <div className="md:col-span-4 space-y-4">
-                  <p className="text-sm font-bold text-solus-text uppercase tracking-widest">Inter</p>
-                  <p className="text-sm font-light text-solus-muted leading-relaxed">
-                    Inter används för all brödtext tack vare dess neutrala men moderna karaktär som fungerar sömlöst på alla digitala skärmar.
-                  </p>
-                </div>
+            <div className="space-y-12">
+              <div className="p-12 bg-white border border-solus-accent/10">
+                <span className="text-xs font-bold tracking-[0.2em] text-solus-accent uppercase mb-4 block">Display & Rubriker</span>
+                <h3 className="text-6xl font-serif text-solus-text">Cormorant Garamond</h3>
+                <p className="text-solus-muted mt-4 font-light italic">Vald för sin tidlösa elegans och auktoritet.</p>
               </div>
-
-              {/* UI Elements Showcase */}
-              <div className="pt-24">
-                <h3 className="text-4xl md:text-5xl font-serif text-solus-text mb-12">Gränssnitt & Navigation</h3>
-                <div className="flex flex-wrap gap-16 items-center">
-                  <div className="text-base font-bold uppercase tracking-[0.2em] text-solus-accent bg-solus-tag-bg px-8 py-3 rounded-full">
-                    Etikett
-                  </div>
-                  <div className="text-base font-bold uppercase tracking-[0.2em] text-solus-text border-b-2 border-solus-accent pb-1">
-                    Länk
-                  </div>
-                  <div className="text-xl md:text-2xl font-bold uppercase tracking-[0.2em] text-solus-text">
-                    VERSAL TEXT (KNAPPAR)
-                  </div>
-                </div>
+              <div className="p-12 bg-white border border-solus-accent/10">
+                <span className="text-xs font-bold tracking-[0.2em] text-solus-accent uppercase mb-4 block">Gränssnitt & Brödtext</span>
+                <h3 className="text-4xl font-sans font-normal text-solus-text">Inter</h3>
+                <p className="text-solus-muted mt-4 font-light">Vald för sin exceptionella läsbarhet i digitala miljöer.</p>
               </div>
             </div>
           </div>
         </Section>
-      </motion.div>
+
+        <Section id="colors" className="scroll-mt-32 pt-12 border-t border-solus-accent/10">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-4xl font-serif text-solus-text mb-6">Färgskala</h2>
+              <p className="text-lg text-solus-muted font-light leading-relaxed mb-8">
+                Färgpaletten är medvetet dämpad och harmonisk. Den är utformad för att skapa en miljö som känns trygg och icke-dömande, långt ifrån den intensitet som ofta förknippas med modern teknik.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {colors.map((color) => (
+                <div key={color.name} className="space-y-4">
+                  <div 
+                    className="aspect-square w-full border border-solus-accent/10" 
+                    style={{ backgroundColor: color.hex }}
+                  />
+                  <div>
+                    <h4 className="font-bold text-sm tracking-widest text-solus-text uppercase">{color.name}</h4>
+                    <p className="text-xs text-solus-muted font-mono uppercase mt-1">{color.hex}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Section>
+
+        <Section id="concept" className="scroll-mt-32 pt-12 border-t border-solus-accent/10">
+          <div className="max-w-3xl">
+            <h2 className="text-4xl font-serif text-solus-text mb-6">Visuellt koncept</h2>
+            <p className="text-xl text-solus-muted font-light leading-relaxed mb-6">
+              Solus visuella identitet undviker de typiska klichéerna kring AI – blått ljus, futuristiska linjer och tomma ytor. Istället hämtas inspiration från psykologens kontor och redaktionell design.
+            </p>
+            <p className="text-xl text-solus-muted font-light leading-relaxed">
+              Resultatet är ett gränssnitt som känns mer som ett verktyg för reflektion än en maskin. Genom att prioritera negativ rymd och subtila övergångar ges användaren plats att andas och tänka.
+            </p>
+          </div>
+        </Section>
+      </div>
     </PageLayout>
   );
 }

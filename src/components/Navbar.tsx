@@ -5,7 +5,6 @@ import { cn } from "@/src/lib/utils";
 const navItems = [
   { name: "Hem", path: "/" },
   { name: "Designprocess", path: "/process" },
-  { name: "Användartester och iteration", path: "/tester" },
   { name: "Solus", path: "/solus" },
 ];
 

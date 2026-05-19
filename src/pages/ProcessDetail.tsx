@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { PageLayout, Section } from "@/src/components/Layout";
-import { ArrowLeft, ChevronDown } from "lucide-react";
+import { ArrowLeft, ChevronDown, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
 interface StepSection {
@@ -13,7 +13,7 @@ interface StepSection {
 interface StepContent {
   title: string;
   subtitle: string;
-  body: string;
+  body: React.ReactNode;
   sections?: StepSection[];
 }
 
@@ -412,7 +412,7 @@ const stepContent: Record<string, StepContent> = {
         title: "Omvärldsanalys",
         shortContent: (
           <>
-            Genom en kartläggning av marknadens befintliga landskap identifieras både etablerade mänskliga stödfunktioner och framväxande tekniska alternativ som adresserar ensamhet. Analysen spänner över allt från röststyrda sällskapsrobotar för äldre till forskningsnätverk och nationella stödlinjer, i syfte att undersöka var begränsningarna ligger och inom vilka områden det finns utrymme för nya, innovativa designlösningar.
+            Genom en kartläggning av området identifieras både etablerade mänskliga stödfunktioner och framväxande tekniska alternativ som adresserar ensamhet. Analysen sträcker sig från röststyrda sällskapsrobotar för äldre till forskningsnätverk och nationella stödlinjer. Syftet är att synliggöra marknadens begränsningar och identifiera inom vilka områden det finns utrymme för nya, innovativa designlösningar.
             <div className="h-8" />
             <hr className="border-solus-accent/20" />
             <div className="h-8" />
@@ -494,8 +494,23 @@ const stepContent: Record<string, StepContent> = {
   },
   "02": {
     title: "02",
-    subtitle: "Syfte, idegenerering och koncept",
-    body: "Baserat på insikterna från forskningen skapas visionen för Solus genom målgruppsanalys och konceptutveckling. Här formuleras designprinciper och konceptuella lösningar som adresserar de identifierade behoven hos användarna.",
+    subtitle: "Syfte och koncept",
+    body: (
+      <div className="space-y-6">
+        <p>
+          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteraturundersökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik kunskapslucka och ett underliggande behov på marknaden. 
+        </p>
+        <p>
+          Med utgångspunkt i detta utvecklades konceptet Solus. Solus är en AI-driven coach utformad för att hjälpa ensamma och socialt isolerade människor att stödja dem i att våga ta det allra första steget ut ur sin ensamhet. Genom att använda ett textbaserat gränssnitt i stället för röstkommunikation sänks tröskeln för att dela med sig av känsliga erfarenheter till en samtalspartner som inte dömer.
+        </p>
+        <p>
+          Genom att integrera handlingsplanen EASE vilar Solus på kunskap och en grund som stöds av Folkhälsomyndigheten och Socialstyrelsen. Målet är att Solus ska fungera som en coach och inte en kompanjon, vilket innebär att framgången mäts i att användaren till slut känner sig reado att avsluta tjänsten. Designen av Solus strävar efter att uppfylla målgruppens behov av att bryta sin isolering, vilket uppnås genom att systemet anpassar sig till användarens specifika situation vid varje samtal.
+        </p>
+        <p>
+          Här formuleras designprinciper och konceptuella lösningar som adresserar de identifierade behoven hos användarna.
+        </p>
+      </div>
+    ),
     sections: [
       {
         title: "Syfte",
@@ -536,6 +551,15 @@ const stepContent: Record<string, StepContent> = {
             <p>
               Konceptet inkluderar även guidade övningar baserade på kognitiv beteendeterapi (KBT) och EASE-metoden, vilket ger användaren konkreta verktyg för att stegvis öka sin sociala interaktion. Genom att fokusera på en minimalistisk och rogivande design skapas en miljö där användaren kan känna sig trygg att utforska sina känslor och växa i sin egen takt.
             </p>
+            <div className="mt-8 p-12 bg-white border border-solus-accent/10 rounded-none space-y-6">
+              <h4 className="text-2xl font-bold text-solus-accent tracking-widest">EASE</h4>
+              <div className="space-y-4 text-lg leading-relaxed text-solus-muted">
+                <p><span className="font-bold text-solus-accent">E: Extend yourself.</span> Ta första steget till kontakt genom att hälsa, småprata och ha ögonkontakt med andra människor.</p>
+                <p><span className="font-bold text-solus-accent">A: Action plan.</span> Fundera ut sammanhang där du kan träffa likasinnade och sök dig till dem, exempelvis en kör eller förening.</p>
+                <p><span className="font-bold text-solus-accent">S: Selection.</span> Välj vilka du vill bli vän med och investera i detta fåtal.</p>
+                <p><span className="font-bold text-solus-accent">E: Expect the best.</span> Utgå från att människor omkring dig vill dig väl.</p>
+              </div>
+            </div>
           </div>
         )
       }
@@ -560,6 +584,21 @@ const stepContent: Record<string, StepContent> = {
         title: "Framtidsutsikter",
         shortContent: "Fokus ligger nu på framtida expansion och hur Solus kan fortsätta att utvecklas i takt med användarnas behov.",
         fullContent: "Framtida utveckling innefattar utforskande av nya sätt att integrera Solus i vardagen på ett sätt som ytterligare minskar känslan av ensamhet."
+      },
+      {
+        title: "Grafisk profil",
+        shortContent: "För att se hur konceptet översattes till en visuell identitet, utforska projektets grafiska profil.",
+        fullContent: (
+          <div className="pt-8">
+            <Link 
+              to="/grafisk-design" 
+              className="inline-flex items-center gap-2 text-solus-accent hover:underline group font-medium"
+            >
+              <span>Gå till Grafisk Profil</span>
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        )
       }
     ]
   }
@@ -665,9 +704,9 @@ export default function ProcessDetail() {
             )}
 
             <div className="space-y-12">
-              <p className="text-xl text-solus-muted leading-relaxed font-light mb-16">
+              <div className="text-xl text-solus-muted leading-relaxed font-light mb-16 whitespace-pre-line">
                 {content.body}
-              </p>
+              </div>
 
               {content.sections && content.sections.map((section, index) => (
                 <SectionItem 

@@ -23,24 +23,19 @@ export default function SolusDetails() {
              </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 py-12">
-            <div className="space-y-6">
-               <h3 className="text-2xl font-medium">Typografi & Färg</h3>
-               <p className="text-solus-muted text-sm leading-relaxed font-light">
-                 **Cormorant Garamond** har valts för att framkalla en känsla av tidlöshet och expertis, kombinerat med **Inter** för tydlighet och modernitet. Färgskalan är medvetet dämpad för att inte överstimulera användaren – en motvikt till den rådande "attention economy"-designen.
-               </p>
-               <div className="flex gap-4 pt-4">
-                  <div className="w-12 h-12 rounded-full bg-solus-bg border border-solus-accent/20" />
-                  <div className="w-12 h-12 rounded-full bg-solus-accent" />
-                  <div className="w-12 h-12 rounded-full bg-solus-text" />
-                  <div className="w-12 h-12 rounded-full bg-white shadow-sm" />
-               </div>
-            </div>
-            <div className="space-y-6">
-               <h3 className="text-2xl font-medium">AI med hjärta</h3>
-               <p className="text-solus-muted text-sm leading-relaxed font-light">
-                 Till skillnad från de flesta AI-assistenter som fokuserar på effektivitet och att "lösa uppgifter", fokuserar Solus på reflektion och emotionellt stöd. Målet är att användaren ska känna sig sedd, inte bara servad.
-               </p>
+          <div className="py-24 border-t border-solus-accent/10">
+            <div className="grid md:grid-cols-2 gap-12">
+              <div className="space-y-6">
+                <h3 className="text-4xl font-serif">Vad är Solus?</h3>
+                <p className="text-xl text-solus-muted font-light leading-relaxed">
+                  Solus är en AI-coach utvecklad för att motverka ofrivillig ensamhet och social isolering bland unga vuxna och äldre. Syftet med verktyget är att hjälpa användaren att ta det allra första steget ut ur sin ensamhet. Det textbaserade samtalsstödet är utformat för att minska det motstånd som ofta finns inför att börja prata om sin ensamhet.
+                </p>
+              </div>
+              <div className="space-y-6 md:pt-16">
+                <p className="text-xl text-solus-muted font-light leading-relaxed">
+                  För att uppnå detta integreras handlingsplanen EASE, som vägleder användaren genom en strukturerad och stegvis social exponering. Solus är utformat för att fungera som en coach snarare än en kompanjon eller följeslagare. Systemets framgång mäts helt i användarens förmåga att till slut bygga upp tillräckligt med mod för det initiala steget mot att söka äkta, mänsklig gemenskap i det verkliga livet.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -58,30 +53,6 @@ export default function SolusDetails() {
         </div>
       </Section>
 
-      <Section className="py-24 border-t border-solus-accent/10">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="sticky top-32">
-            <h2 className="text-4xl font-serif mb-6">Grafisk design<span className="text-solus-accent">.</span></h2>
-          </div>
-          <div className="space-y-8">
-            <p className="text-lg text-solus-muted font-light leading-relaxed">
-              Den grafiska identiteten för Solus är framtagen för att spegla balansen mellan det tekniskt avancerade och det djupt mänskliga. Genom ett medvetet val av form, färg och rörelse skapas en miljö där användaren känner sig välkomnad och trygg.
-            </p>
-            <p className="text-lg text-solus-muted font-light leading-relaxed">
-              Fokus har legat på att skapa ett visuellt lugn som kontrasterar mot dagens ofta brusiga digitala landskap. Varje element, från logotyps form till de subtila animationerna, tjänar syftet att sänka tröskeln för interaktion och främja reflektion.
-            </p>
-            <div className="flex justify-end pt-4">
-              <Link 
-                to="/grafisk-design"
-                className="inline-flex items-center gap-2 group text-solus-accent hover:text-solus-text transition-colors"
-              >
-                <span className="text-[10px] font-bold tracking-[0.2em] uppercase">Läs mer</span>
-                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </Section>
     </PageLayout>
   );
 }

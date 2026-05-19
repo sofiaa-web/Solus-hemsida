@@ -1,75 +1,57 @@
 import { PageLayout, Section } from "@/src/components/Layout";
+import SagaImg from "@/src/components/Saga.png";
+import LeifImg from "@/src/components/Leif.png";
 
 export default function UserTesting() {
   const sections = [
     {
       id: "malgrupp",
       title: "Målgrupp",
-      intro: "Solus vänder sig till människor som upplever ofrivillig ensamhet, oavsett livsskede. Målgruppen spänner från unga vuxna i nya städer till seniorer som söker meningsfull vardagskontakt.",
-      quotes: [
-        { text: `"Ensamhet ser olika ut för alla, men behovet av att bli sedd är universellt."`, sub: "— Projektets grundtes" }
-      ],
-      insightsTitle: "Målgruppssegment",
+      intro: "Ofrivillig ensamhet och social isolering är ett växande folkhälso- och samhällsproblem i Sverige som i dag drabbar unga vuxna och äldre särskilt hårt. Målgruppen för detta projekt är därför uppdelad i två specifika åldersgrupper som på olika sätt drabbas hårt av ofrivillig ensamhet: unga vuxna (18–25 år) och äldre (70+ år).",
+      quotes: [],
+      insightsTitle: "",
       insights: [
-        { title: "Unga vuxna", text: "Personer som flyttat för studier eller jobb och saknar ett socialt skyddsnät." },
-        { title: "Seniorer", text: "Äldre som bor kvar hemma men har begränsad social interaktion i sin vardag." },
-        { title: "Anhöriga", text: "Personer som söker en trygg och stöttande miljö för sina nära." }
+        { title: "Unga vuxna (18–25 år) – Den digitalt isolerade generationen", text: "En generation som är ständigt uppkopplad och har vuxit upp med smartphonen som en central del av livet, men som trots det upplever en utbredd social brist och psykisk ohälsa." },
+        { title: "Äldre (70+ år) – Den fysiskt isolerade gruppen", text: "För den äldre målgruppen handlar isoleringen oftast om yttre, strukturella livsförändringar. Det handlar om den ensamhet som uppstår efter pensionering, vid förlust av en livskamrat och nära vänner, eller på grund av fysisk sjukdom och minskad rörlighet. När de naturliga sätten att träffa människor försvinner blir det svårt att på egen hand hitta en ny gemenskap." }
       ]
     },
     {
       id: "personas",
       title: "Personas",
-      intro: "Genom djupintervjuer har vi format karaktärer som hjälper oss att designa med empati och precision.",
+      intro: "På grund av svårigheter med att rekrytera deltagare ur målgrupperna skapades två AI-personas: Saga, 20 år, och Leif, 79 år. Dessa har tilldelats specifika identiteter, egenskaper och livssituationer som speglar ofrivillig ensamhet. För att säkerställa hög relevans och reliabilitet är båda karaktärerna strikt grundade i data från Folkhälsomyndighetens kartläggning av ensamhet.",
       quotes: [
-        { text: `"Jag behöver någon som finns där när tystnaden i lägenheten blir för hög."`, sub: "— 'Den ensamma studenten'" },
-        { text: `"Teknik ska inte vara ett hinder, det ska vara en varm utsträckt hand."`, sub: "— 'Den äldre seniorn'" }
+        { 
+          text: `"Jag behöver någon som finns där när tystnaden i lägenheten blir för hög."`, 
+          sub: "— Saga, 20 år",
+          image: SagaImg 
+        },
+        { 
+          text: `”Sönerna har fullt upp med sina egna jobb och familjer. Jag förstår ju det, så jag väntar hellre på att de ska ringa mig.”`, 
+          sub: "— Leif, 79 år",
+          image: LeifImg 
+        }
       ],
-      insightsTitle: "Psykologiska behov",
-      insights: [
-        { title: "Bekräftelse", text: "Behovet av att bli sedd och hörd utan att bli dömd eller avbruten." },
-        { title: "Kontinuitet", text: "Vikten av att assistenten minns tidigare samtal för att bygga en långsiktig relation." },
-        { title: "Trygghet", text: "Låg tröskel för interaktion och hög transparens kring dataintegritet." }
-      ]
+      extraText: "Genom att testa gränssnittet mot AI-personas har projektet fått en uppfattning om hur ett verkligt användartillfälle på hemsidan skulle eventuellt kunnat se ut för en person ur målgruppen. Metoden gjorde det möjligt att simulera interaktionen och pröva designen mot karaktärernas specifika förutsättningar. Testerna gav viktiga insikter om hur samtalen och tonläget fungerar i praktiken. Att bedöma själva innehållet i dialogerna mellan en persona och Solus blir dock subjektivt, eftersom det i slutändan handlar om kvalificerade gissningar kring hur en verklig person ur målgruppen faktiskt skulle uppleva bemötandet.",
+      insightsTitle: "",
+      insights: []
     },
     {
       id: "surrogat",
       title: "Surrogat",
-      intro: "Utforskande av assistentens roll som ett emotionellt surrogat i digitala miljöer.",
-      quotes: [
-        { text: `"Gränsen mellan människa och maskin suddas ut när empati blir algoritmiskt."`, sub: "— Interaktionsforskare" },
-        { text: `"Det är inte en ersättning för människor, det är en brygga till att våga mer."`, sub: "— Psykologutlåtande" }
-      ],
-      insightsTitle: "Tekniska utmaningar",
-      insights: [
-        { title: "Emotionell AI", text: "Utveckling av förståelse för subtila nyanser i mänskligt språk." },
-        { title: "Gränssättningar", text: "Att skapa en tydlig balans mellan närvaro och för stor teknisk dominans." },
-        { title: "Etik", text: "Ansvaret i att designa en tjänst som påverkar människors välmående så djupt." }
-      ]
-    },
-    {
-      id: "resultat",
-      title: "Resultat",
-      intro: "Resultat från kvalitativa studier och interaktionsanalyser med fokus på emotionell respons och trygghet.",
-      quotes: [
-        { text: `"Det kändes inte som en chatbot, det kändes som om någon faktiskt lyssnade."`, sub: "— Testdeltagare, 28 år" },
-        { text: `"Jag gillade det lugna färgvalet. Det stressade mig inte som andra appar gör."`, sub: "— Testdeltagare, 45 år" }
-      ],
-      insightsTitle: "Viktigaste insikterna",
-      insights: [
-        { title: "Tonläge", text: "Användarna föredrog korta, reflekterande svar snarare än långa instruktioner." },
-        { title: "Visuell feedback", text: "Subtila animationer när Solus 'lyssnar' var avgörande för att skapa en känsla av närvaro." },
-        { title: "Enkelhet", text: "Eliminering av onödiga knappar och menyer minskade det kognitiva motståndet." }
-      ]
+      intro: `Då projektets primära målgrupp byttes ut mot AI-personas för användartester, valdes metoden surrogattest som en kompletering. Ett surrogattest innebär att man använder ställföreträdare för att simulera och utvärdera ett gränssnitt när de faktiska slutanvändarna inte finns tillgängliga.
+
+Syftet med testet var primärt att få ett mänskligt perspektiv på hur Solus fungerar rent praktiskt och att samla in teknisk kritik. Genom att låta personer navigera hemsidan och interagera med systemet kunde kritiska synpunkter kring användarvänlighet, flöden och teknisk funktionalitet identifieras. Detta gav värdefulla insikter om systemets stabilitet och logik som inte hade gått att förutse på egen hand, vilket har varit avgörande för att optimera webbplatsen inför framtida möten med den faktiska målgruppen.`,
+      quotes: [],
+      insightsTitle: "",
+      insights: []
     }
   ];
 
   return (
     <PageLayout>
       <Section className="mb-20">
-        <h1 className="text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">Användartester och iteration<span className="text-solus-accent">.</span></h1>
-        <p className="text-xl text-solus-muted font-light leading-relaxed max-w-3xl mb-12">
-          Här samlas lärdomar från mötet mellan människa och AI.
-        </p>
+        <h1 className="text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">Användartester och målgrupp<span className="text-solus-accent">.</span></h1>
+
 
         <div className="flex flex-wrap gap-4">
           {sections.map((section) => (
@@ -89,27 +71,55 @@ export default function UserTesting() {
           <div key={section.id} id={section.id} className="scroll-mt-32 pt-12 border-t border-solus-accent/10">
             <Section className="mb-12">
               <h2 className="text-5xl md:text-7xl font-serif text-solus-text mb-6">{section.title}</h2>
-              <p className="text-lg text-solus-muted font-light leading-relaxed max-w-2xl">
-                {section.intro}
-              </p>
+              {section.intro && (
+                <p className="text-lg text-solus-muted font-light leading-relaxed max-w-2xl whitespace-pre-line">
+                  {section.intro}
+                </p>
+              )}
             </Section>
 
-            <Section className="grid md:grid-cols-2 gap-8 mb-16">
-              {section.quotes.map((quote, idx) => (
-                <div key={idx} className={`${idx === 0 ? 'bg-white border border-solus-border' : 'bg-solus-card-bg'} p-12 group hover:border-solus-accent transition-all`}>
-                  <h3 className="font-serif text-3xl font-medium text-solus-text mb-6">{quote.text}</h3>
-                  <p className="text-[10px] font-bold tracking-[0.2em] text-solus-accent uppercase">{quote.sub}</p>
-                </div>
-              ))}
-            </Section>
+            {section.quotes.length > 0 && (
+              <Section className="grid md:grid-cols-2 gap-8 mb-16">
+                {section.quotes.map((quote: any, idx) => (
+                  <div key={idx} className="bg-white border border-solus-border overflow-hidden group hover:border-solus-accent transition-all flex flex-col">
+                    {quote.image && (
+                      <div className="aspect-[4/5] w-full overflow-hidden">
+                        <img 
+                          src={quote.image} 
+                          alt={quote.sub} 
+                          className="w-full h-full object-cover transition-all duration-700" 
+                          referrerPolicy="no-referrer"
+                        />
+                      </div>
+                    )}
+                    <div className="p-12">
+                      <h3 className="font-serif text-3xl font-medium text-solus-text mb-6">{quote.text}</h3>
+                      <p className="text-[10px] font-bold tracking-[0.2em] text-solus-accent uppercase">{quote.sub}</p>
+                    </div>
+                  </div>
+                ))}
+              </Section>
+            )}
+
+            {(section as any).extraText && (
+              <Section className="mb-16">
+                <p className="text-lg text-solus-muted font-light leading-relaxed max-w-2xl">
+                  {(section as any).extraText}
+                </p>
+              </Section>
+            )}
 
             <Section className="space-y-12">
-              <h2 className="text-3xl font-medium">{section.insightsTitle}</h2>
-              <div className="grid md:grid-cols-3 gap-12">
+              {section.insightsTitle && (
+                <h2 className="text-3xl font-medium">{section.insightsTitle}</h2>
+              )}
+              <div className={`grid gap-12 ${section.insights.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
                 {section.insights.map((insight, idx) => (
-                  <div key={idx} className="space-y-4">
-                    <h4 className="font-semibold uppercase tracking-widest text-xs text-solus-accent">{insight.title}</h4>
-                    <p className="text-solus-muted font-light text-sm leading-relaxed">
+                  <div key={idx} className={`space-y-6 ${(section.id === 'malgrupp' || section.id === 'surrogat') ? 'bg-white p-12 border border-solus-accent/10' : ''}`}>
+                    <h4 className={`font-bold ${(section.id === 'malgrupp' || section.id === 'surrogat') ? 'text-2xl text-solus-text' : 'uppercase tracking-widest text-base text-solus-accent'}`}>
+                      {insight.title}
+                    </h4>
+                    <p className="text-solus-muted font-light text-lg leading-relaxed">
                       {insight.text}
                     </p>
                   </div>

@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
 import type { ReactNode } from "react";
 
-export function Section({ children, className }: { children: ReactNode, className?: string }) {
+export function Section({ children, className, id }: { children: ReactNode, className?: string, id?: string }) {
   return (
     <motion.section
+      id={id}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

@@ -11,20 +11,59 @@ const steps = [
   },
   {
     title: "Litteraturundersökning och omvärldsanalys",
-    desc: "Utforskande av ensamhet som samhällsproblem och teknologins roll i det.",
-    details: "Genom omfattande litteratursstudier och intervjuer identifierades behovet av en mer 'empatisk' assistent.",
+    desc: (
+      <div className="space-y-6">
+        <p>
+          Arbetet med litteraturundersökningen och omvärldsanalysen har <span className="font-bold text-solus-text">gett Solus en tydlig teoretisk och praktisk grund</span> att stå på. Processen har resulterat i avgörande designprinciper genom att visa <span className="font-bold text-solus-text">att textbaserade gränssnitt skapar störst psykologisk trygghet</span>, minskar den kognitiva belastningen och underlättar kommunikation kring sårbarheter jämfört med röstbaserade system.
+        </p>
+      </div>
+    ),
+    details: (
+      <div className="space-y-6">
+        <p className="text-solus-muted font-light leading-relaxed">
+          Genom en <span className="font-bold text-solus-text">omvärldsanalys och kartläggning</span> av området identifieras både etablerade mänskliga stödfunktioner och framväxande tekniska alternativ som adresserar ensamhet. Analysen sträcker sig från röststyrda sällskapsrobotar för äldre till forskningsnätverk och nationella stödlinjer. <span className="font-bold text-solus-text">Syftet är att synliggöra marknadens begränsningar och identifiera inom vilka områden det finns utrymme för nya, innovativa designlösningar.</span>
+        </p>
+      </div>
+    ),
     link: "/process/01"
   },
   {
-    title: "Syfte, idegenerering och koncept",
-    desc: "Baserat på insikterna från forskningen skapas visionen för Solus genom målgruppsanalys och konceptutveckling.",
-    details: "Här formuleras designprinciper och konceptuella lösningar som adresserar de identifierade behoven hos användarna.",
+    title: "Syfte och koncept",
+    desc: (
+      <div className="space-y-6">
+        <p>
+          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteraturundersökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik kunskapslucka och ett underliggande behov på marknaden. 
+        </p>
+        <p>
+          Med utgångspunkt i detta utvecklades konceptet Solus. Solus är en AI-driven coach utformad för att hjälpa ensamma och socialt isolerade människor att stödja dem i att våga ta det allra första steget ut ur sin ensamhet.
+        </p>
+        <p>
+          Genom att integrera handlingsplanen EASE vilar Solus på kunskap och en grund som stöds av Folkhälsomyndigheten och Socialstyrelsen. Målet är att Solus ska fungera som en coach och inte en kompanjon, vilket innebär att framgången mäts i att användaren till slut känner sig redo att avsluta tjänsten.
+        </p>
+      </div>
+    ),
+    details: null,
     link: "/process/02"
   },
   {
-    title: "Användartester och iteration",
-    desc: "Validering av designbeslut genom direkta användartester.",
-    details: "Analys av feedback för att förstå hur användare interagerar med Solus och var förbättringar behövs.",
+    title: "Användartester och målgrupp",
+    desc: (
+      <div className="space-y-6">
+        <p>
+          Ofrivillig ensamhet och social isolering är ett växande folkhälso- och samhällsproblem i Sverige som i dag drabbar unga vuxna och äldre särskilt hårt. Målgruppen för detta projekt är därför uppdelad i två specifika åldersgrupper som på olika sätt drabbas hårt av ofrivillig ensamhet: unga vuxna (18–25 år) och äldre (70+ år).
+        </p>
+      </div>
+    ),
+    details: (
+      <div className="space-y-6">
+        <p className="text-solus-muted font-light leading-relaxed">
+          Eftersom målgrupperna var svåra att rekrytera, skapades två personas, Saga (20 år) och Leif (79 år), som bygger på data från Folkhälsomyndigheten. Genom att testa hemsidans gränssnitt mot dessa AI-personas skapades en bild av hur ett verkligt användartillfälle skulle kunna se ut, vilket gav viktiga insikter om samtalen och tonläget.
+        </p>
+        <p className="text-solus-muted font-light leading-relaxed">
+          Som ett komplement genomfördes surrogattester, vilket innebär att utomstående personer fick testa Solus för att samla in teknisk kritik och identifiera brister i användarvänlighet och flöden.
+        </p>
+      </div>
+    ),
     link: "/tester"
   },
   {
@@ -40,9 +79,7 @@ export default function Process() {
     <PageLayout>
       <Section className="mb-20">
         <h1 className="text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">Designprocessen<span className="text-solus-accent">.</span></h1>
-        <p className="text-xl text-solus-muted font-light leading-relaxed max-w-3xl mb-12">
-          Att designa för empati kräver en process som sätter människan i centrum. Från den första insikten till den slutgiltiga prototypen.
-        </p>
+
         
         <div className="flex flex-wrap gap-4">
           {steps.map((step, idx) => (
@@ -85,17 +122,41 @@ export default function Process() {
               <Section className="grid md:grid-cols-2 gap-12 items-start border-t border-solus-accent/10 pt-12">
                 <div className="sticky top-32">
                   <h2 className="text-3xl font-medium mb-6">{step.title}</h2>
-                  <p className="text-lg leading-relaxed whitespace-pre-line">{step.desc}</p>
+                  <div className="text-lg leading-relaxed text-solus-muted font-light">
+                    {step.desc}
+                  </div>
                 </div>
                 <div className="space-y-6">
-                  <div className="bg-white/40 p-8 rounded-2xl border border-solus-accent/5">
-                    <p className="text-solus-muted font-light leading-relaxed mb-6">
-                      {step.details}
-                    </p>
-                    <div className="aspect-video bg-solus-bg rounded-lg border border-solus-accent/10 flex items-center justify-center text-solus-accent/40 text-sm">
-                      Processbild / Sketch
+                  {step.details && (
+                    <div className={typeof step.details === 'string' ? "bg-white/40 p-8 rounded-2xl border border-solus-accent/5" : "text-lg"}>
+                      {typeof step.details === 'string' ? (
+                        <>
+                          <p className="text-solus-muted font-light leading-relaxed mb-6">
+                            {step.details}
+                          </p>
+                          <div className="aspect-video bg-solus-bg rounded-lg border border-solus-accent/10 flex items-center justify-center text-solus-accent/40 text-sm">
+                            Processbild / Sketch
+                          </div>
+                        </>
+                      ) : (
+                        <div className="text-solus-muted font-light leading-relaxed">
+                          {step.details}
+                        </div>
+                      )}
                     </div>
-                  </div>
+                  )}
+
+                  {step.title === "Syfte och koncept" && (
+                    <div className="bg-white p-12 rounded-none border border-solus-accent/10 mb-8">
+                      <h3 className="text-2xl font-bold mb-8 text-solus-accent tracking-widest">EASE</h3>
+                      <div className="space-y-6 text-lg leading-relaxed text-solus-muted font-light">
+                        <p><span className="font-bold text-solus-accent">E: Extend yourself.</span> Ta första steget till kontakt genom att hälsa, småprata och ha ögonkontakt med andra människor.</p>
+                        <p><span className="font-bold text-solus-accent">A: Action plan.</span> Fundera ut sammanhang där du kan träffa likasinnade och sök dig till dem, exempelvis en kör eller förening.</p>
+                        <p><span className="font-bold text-solus-accent">S: Selection.</span> Välj vilka du vill bli vän med och investera i detta fåtal.</p>
+                        <p><span className="font-bold text-solus-accent">E: Expect the best.</span> Utgå från att människor omkring dig vill dig väl.</p>
+                      </div>
+                    </div>
+                  )}
                   <div className="flex justify-end pt-2">
                     <Link 
                       to={step.link}

@@ -42,7 +42,7 @@ export default function Home() {
           >
             <div className="text-xl md:text-2xl text-solus-muted leading-relaxed font-light text-left space-y-8">
               <p>
-                Solus är en digital coach i form av ett textbaserat gränssnitt. Genom att kombinera ett varmt och professionellt bemötande med vetenskapligt förankrade behandlingsplaner, vägleder assistenten dig steg för steg mot att skapa mänskliga kontakter i den analoga världen.
+                Solus är en digital coach i form av ett textbaserat gränssnitt. Genom att kombinera ett varmt och professionellt bemötande förankrad i vetenskap och handlingsplaner, vägleder assistenten dig steg för steg mot att skapa mänskliga kontakter i den analoga världen.
               </p>
               <div className="py-4 flex justify-center">
                 <img 
