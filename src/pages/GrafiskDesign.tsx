@@ -3,10 +3,10 @@ import { motion } from "motion/react";
 
 export default function GrafiskDesign() {
   const colors = [
-    { name: "Solus Text", hex: "#1A1A1A", desc: "Används för rubriker och brödtext för maximal läsbarhet." },
-    { name: "Solus Accent", hex: "#D4A373", desc: "En varm, jordnära ton som guidar användaren och markerar interaktion." },
-    { name: "Solus Background", hex: "#FAF9F6", desc: "En mjuk benvit nyans som minskar ögontrötthet." },
-    { name: "Solus Muted", hex: "#707070", desc: "Används för sekundär information och hjälptexter." },
+    { name: "Solus Text", hex: "#1A1A1A", desc: "Används för rubriker och brödtext för maximal läsbarhet och perfekt kontrast." },
+    { name: "Solus Accent", hex: "#3A2B22", desc: "En djup, varm jordnära ton som sätter varumärkets unika karaktär, fyller paneler och markerar interaktion." },
+    { name: "Solus Background", hex: "#FDFCF9", desc: "En behaglig, mjuk benvit nyans utformad för att minska ögontrötthet under längre läsning." },
+    { name: "Solus Muted", hex: "#6B6B66", desc: "Brukas för brödtext, sekundär information och dämpade hjälptexter." },
   ];
 
   return (

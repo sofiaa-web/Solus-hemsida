@@ -6,6 +6,7 @@ const navItems = [
   { name: "Hem", path: "/" },
   { name: "Designprocess", path: "/process" },
   { name: "Solus", path: "/solus" },
+  { name: "Grafisk profil", path: "/grafisk-design" },
 ];
 
 export function Navbar() {
