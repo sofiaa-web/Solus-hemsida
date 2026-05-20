@@ -10,11 +10,11 @@ const steps = [
     link: "/process/ensamhet"
   },
   {
-    title: "Litteraturundersökning och omvärldsanalys",
+    title: "Litteratursökning och omvärldsanalys",
     desc: (
       <div className="space-y-6">
         <p>
-          Arbetet med litteraturundersökningen och omvärldsanalysen har <span className="font-bold text-solus-text">gett Solus en tydlig teoretisk och praktisk grund</span> att stå på. Processen har resulterat i avgörande designprinciper genom att visa <span className="font-bold text-solus-text">att textbaserade gränssnitt skapar störst psykologisk trygghet</span>, minskar den kognitiva belastningen och underlättar kommunikation kring sårbarheter jämfört med röstbaserade system.
+          Arbetet med litteratursökningen och omvärldsanalysen har <span className="font-bold text-solus-text">gett Solus en tydlig teoretisk och praktisk grund</span> att stå på. Processen har resulterat i avgörande designprinciper genom att visa <span className="font-bold text-solus-text">att textbaserade gränssnitt skapar störst psykologisk trygghet</span>, minskar den kognitiva belastningen och underlättar kommunikation kring sårbarheter jämfört med röstbaserade system.
         </p>
       </div>
     ),
@@ -32,7 +32,7 @@ const steps = [
     desc: (
       <div className="space-y-6">
         <p>
-          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteraturundersökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik kunskapslucka och ett underliggande behov på marknaden. 
+          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteratursökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik kunskapslucka och ett underliggande behov på marknaden. 
         </p>
         <p>
           Med utgångspunkt i detta utvecklades konceptet Solus. Solus är en AI-driven coach utformad för att hjälpa ensamma och socialt isolerade människor att stödja dem i att våga ta det allra första steget ut ur sin ensamhet.

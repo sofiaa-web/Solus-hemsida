@@ -180,7 +180,7 @@ const stepContent: Record<string, StepContent> = {
   },
   "01": {
     title: "01",
-    subtitle: "Litteraturundersökning och omvärldsanalys",
+    subtitle: "Litteratursökning och omvärldsanalys",
     body: "I denna fas ligger fokus på att förstå kärnan i problemet. Ensamhetens anatomi utforskas tillsammans med hur digitala verktyg kan överbrygga klyftan mellan isolation och gemenskap utan att ersätta mänsklig kontakt.",
     sections: [
       {
@@ -498,7 +498,7 @@ const stepContent: Record<string, StepContent> = {
     body: (
       <div className="space-y-6">
         <p>
-          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteraturundersökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik kunskapslucka och ett underliggande behov på marknaden. 
+          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteratursökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik kunskapslucka och ett underliggande behov på marknaden. 
         </p>
         <p>
           Med utgångspunkt i detta utvecklades konceptet Solus. Solus är en AI-driven coach utformad för att hjälpa ensamma och socialt isolerade människor att stödja dem i att våga ta det allra första steget ut ur sin ensamhet. Genom att använda ett textbaserat gränssnitt i stället för röstkommunikation sänks tröskeln för att dela med sig av känsliga erfarenheter till en samtalspartner som inte dömer.
