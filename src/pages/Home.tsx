@@ -13,7 +13,7 @@ export default function Home() {
           <div className="inline-block px-4 py-1 bg-solus-tag-bg text-solus-accent text-[10px] font-bold tracking-[0.2em] rounded-full uppercase">
             Designprojekt 2026
           </div>
-          <h1 className="text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text">
+          <h1 className="text-5xl sm:text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text">
             Solus<span className="text-solus-accent">.</span>
           </h1>
           <p className="text-xl md:text-2xl text-solus-muted leading-relaxed font-light mx-auto">

@@ -14,14 +14,14 @@ export default function SolusDetails() {
   return (
     <PageLayout>
       <Section className="mb-20">
-        <h1 className="text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">
+        <h1 className="text-5xl sm:text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">
            Solus<span className="text-solus-accent">.</span>
         </h1>
         
         <div className="prose prose-solus max-w-none space-y-12">
           <div className="border-t border-solus-accent/10 pt-12">
             <div className="bg-solus-accent p-16 text-white">
-               <p className="leading-relaxed font-light text-2xl md:text-3xl max-w-3xl">
+               <p className="leading-relaxed font-light text-lg md:text-xl max-w-3xl">
                  Ofrivillig ensamhet och social isolering är ett växande problem som har allvarliga konsekvenser för både den psykiska och fysiska hälsan. Att ta sig ur ensamhet på egen hand kan kännas övermäktigt. Solus sänker tröskeln för att hjälpa dig ta det allra första steget mot förändring.
                </p>
             </div>

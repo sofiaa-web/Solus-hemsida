@@ -1,14 +1,31 @@
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import type { ReactNode } from "react";
 
 export function Section({ children, className, id, noScrollAnimation }: { children: ReactNode, className?: string, id?: string, noScrollAnimation?: boolean }) {
-  if (noScrollAnimation) {
+  const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const shouldAnimate = mounted && !noScrollAnimation && !isMobile;
+
+  if (!shouldAnimate) {
     return (
       <section id={id} className={className}>
         {children}
       </section>
     );
   }
+
   return (
     <motion.section
       id={id}

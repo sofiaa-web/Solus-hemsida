@@ -7,7 +7,11 @@ export default function UserTesting() {
     {
       id: "malgrupp",
       title: "Målgrupp",
-      intro: "Ofrivillig ensamhet och social isolering är ett växande folkhälso- och samhällsproblem i Sverige som i dag drabbar unga vuxna och äldre särskilt hårt. Målgruppen för detta projekt är därför uppdelad i två specifika åldersgrupper som på olika sätt drabbas hårt av ofrivillig ensamhet: unga vuxna (18–25 år) och äldre (70+ år).",
+      intro: (
+        <>
+          Ofrivillig ensamhet och social isolering är ett växande <span className="font-bold text-solus-text">folkhälso- och samhällsproblem</span> i Sverige som i dag drabbar unga vuxna och äldre särskilt hårt. <span className="font-bold text-solus-text">Målgruppen</span> för detta projekt är därför uppdelad i två specifika åldersgrupper som på olika sätt drabbas hårt av <span className="font-bold text-solus-text">ofrivillig ensamhet: unga vuxna (18–25 år) och äldre (70+ år)</span>.
+        </>
+      ),
       quotes: [],
       insightsTitle: "",
       insights: [
@@ -18,7 +22,11 @@ export default function UserTesting() {
     {
       id: "personas",
       title: "Personas",
-      intro: "På grund av svårigheter med att rekrytera deltagare ur målgrupperna skapades två AI-personas: Saga, 20 år, och Leif, 79 år. Dessa har tilldelats specifika identiteter, egenskaper och livssituationer som speglar ofrivillig ensamhet. För att säkerställa hög relevans och reliabilitet är båda karaktärerna strikt grundade i data från Folkhälsomyndighetens kartläggning av ensamhet.",
+      intro: (
+        <>
+          På grund av svårigheter med att rekrytera deltagare ur målgrupperna skapades <span className="font-bold text-solus-text">två AI-personas: Saga, 20 år, och Leif, 79 år.</span> Dessa har tilldelats specifika identiteter, egenskaper och livssituationer som speglar ofrivillig ensamhet. För att säkerställa hög relevans och trovärdighet är båda karaktärerna strikt grundade i data från Folkhälsomyndighetens kartläggning av ensamhet.
+        </>
+      ),
       quotes: [
         { 
           text: `"Jag behöver någon som finns där när tystnaden i lägenheten blir för hög."`, 
@@ -31,16 +39,24 @@ export default function UserTesting() {
           image: LeifImg 
         }
       ],
-      extraText: "Genom att testa gränssnittet mot AI-personas har projektet fått en uppfattning om hur ett verkligt användartillfälle på hemsidan skulle eventuellt kunnat se ut för en person ur målgruppen. Metoden gjorde det möjligt att simulera interaktionen och pröva designen mot karaktärernas specifika förutsättningar. Testerna gav viktiga insikter om hur samtalen och tonläget fungerar i praktiken. Att bedöma själva innehållet i dialogerna mellan en persona och Solus blir dock subjektivt, eftersom det i slutändan handlar om kvalificerade gissningar kring hur en verklig person ur målgruppen faktiskt skulle uppleva bemötandet.",
+      extraText: (
+        <>
+          <span className="font-bold text-solus-text">Genom att testa Solus mot AI-personas</span> har projektet fått en uppfattning om hur ett verkligt användartillfälle på hemsidan skulle eventuellt kunnat se ut för en person ur målgruppen. Metoden gjorde det <span className="font-bold text-solus-text">möjligt att simulera interaktionen och pröva designen mot karaktärernas specifika förutsättningar.</span> Testerna gav viktiga <span className="font-bold text-solus-text">insikter</span> om hur samtalen och tonläget fungerar i praktiken. Att bedöma själva innehållet i dialogerna mellan en persona och Solus blir dock subjektivt, eftersom det i slutändan handlar om kvalificerade gissningar kring hur en verklig person ur målgruppen faktiskt skulle uppleva bemötandet.
+        </>
+      ),
       insightsTitle: "",
       insights: []
     },
     {
       id: "surrogat",
       title: "Surrogat",
-      intro: `Då projektets primära målgrupp byttes ut mot AI-personas för användartester, valdes metoden surrogattest som en kompletering. Ett surrogattest innebär att man använder ställföreträdare för att simulera och utvärdera ett gränssnitt när de faktiska slutanvändarna inte finns tillgängliga.
-
-Syftet med testet var primärt att få ett mänskligt perspektiv på hur Solus fungerar rent praktiskt och att samla in teknisk kritik. Genom att låta personer navigera hemsidan och interagera med systemet kunde kritiska synpunkter kring användarvänlighet, flöden och teknisk funktionalitet identifieras. Detta gav värdefulla insikter om systemets stabilitet och logik som inte hade gått att förutse på egen hand, vilket har varit avgörande för att optimera webbplatsen inför framtida möten med den faktiska målgruppen.`,
+      intro: (
+        <>
+          Då projektets primära målgrupp byttes ut mot AI-personas för användartester, valdes <span className="font-bold text-solus-text">metoden surrogattest som en kompletering</span>. Ett surrogattest innebär att man använder <span className="font-bold text-solus-text">ställföreträdare för att simulera och utvärdera ett gränssnitt</span> när de faktiska slutanvändarna inte finns tillgängliga.
+          <br /><br />
+          Syftet med testet var primärt att få ett <span className="font-bold text-solus-text">mänskligt perspektiv</span> på hur Solus fungerar rent praktiskt och att samla in teknisk kritik. Genom att låta personer navigera hemsidan och interagera med systemet kunde kritiska synpunkter kring användarvänlighet, flöden och teknisk funktionalitet identifieras. Detta gav <span className="font-bold text-solus-text">värdefulla insikter om systemets stabilitet och logik</span> som inte hade gått att förutse på egen hand, vilket har varit avgörande för att optimera webbplatsen inför framtida möten med den faktiska målgruppen.
+        </>
+      ),
       quotes: [],
       insightsTitle: "",
       insights: []
@@ -50,7 +66,7 @@ Syftet med testet var primärt att få ett mänskligt perspektiv på hur Solus f
   return (
     <PageLayout>
       <Section className="mb-20">
-        <h1 className="text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">Användartester och målgrupp<span className="text-solus-accent">.</span></h1>
+        <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-serif leading-[0.85] text-solus-text mb-8">Användartester och målgrupp<span className="text-solus-accent">.</span></h1>
 
 
         <div className="flex flex-wrap gap-4">

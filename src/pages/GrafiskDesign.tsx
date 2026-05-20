@@ -17,7 +17,7 @@ export default function GrafiskDesign() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">
+          <h1 className="text-5xl sm:text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">
             Grafisk identitet<span className="text-solus-accent">.</span>
           </h1>
         </motion.div>

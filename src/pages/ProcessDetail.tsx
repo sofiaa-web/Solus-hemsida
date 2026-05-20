@@ -181,17 +181,17 @@ const stepContent: Record<string, StepContent> = {
   "01": {
     title: "01",
     subtitle: "Litteratursökning och omvärldsanalys",
-    body: "I denna fas ligger fokus på att förstå kärnan i problemet. Ensamhetens anatomi utforskas tillsammans med hur digitala verktyg kan överbrygga klyftan mellan isolation och gemenskap utan att ersätta mänsklig kontakt.",
+    body: "I denna fas ligger fokus på att förstå kärnan i problemet. Det handlar om att kartlägga vad ensamhet faktiskt innebär och hur tekniken kan fungera som en länk till gemenskap, utan att ta plats från det mänskliga mötet.",
     sections: [
       {
         title: "Forskning",
         shortContent: (
           <div className="space-y-4">
             <p>
-              Forskning från Karolinska Institutet visar att ofrivillig ensamhet har en stor effekt på hälsan och kan vara lika skadligt som rökning. För att mäta ensamhet används UCLA Loneliness Scale, och för att bryta isoleringen lyfts den amerikanska handlingsplanen EASE fram som en konkret metod för social återhämtning.
+              <span className="font-bold text-solus-text">Forskning från Karolinska Institutet</span> visar att ofrivillig ensamhet har en stor effekt på hälsan och kan vara lika skadligt som rökning. För att <span className="font-bold text-solus-text">mäta ensamhet används UCLA</span> Loneliness Scale, och för att bryta isoleringen lyfts den amerikanska <span className="font-bold text-solus-text">handlingsplanen EASE</span> fram som en konkret <span className="font-bold text-solus-text">metod för social återhämtning</span>.
             </p>
             <p>
-              Studier av digital teknik ger värdefulla insikter om varför textbaserade gränssnitt skapar bäst psykologisk trygghet samtidigt som de dolda riskerna med AI-kompanjoner problematiseras. Forskningen visar att användare föredrar att skriva framför att prata när de delar sårbarheter, men varnar samtidigt för att virtuella relationer kan leda till emotionella abstinenssymptom och fördjupad isolering offline.
+              Studier av digital teknik ger värdefulla insikter om varför <span className="font-bold text-solus-text">textbaserade gränssnitt skapar bäst psykologisk trygghet</span> samtidigt som de <span className="font-bold text-solus-text">dolda riskerna med AI-kompanjoner problematiseras</span>. Forskningen visar att användare föredrar att skriva framför att prata när de delar sårbarheter, men varnar samtidigt för att virtuella relationer kan leda till emotionella abstinenssymptom och fördjupad isolering offline.
             </p>
           </div>
         ),
@@ -323,7 +323,11 @@ const stepContent: Record<string, StepContent> = {
       },
       {
         title: "Allmänna källor",
-        shortContent: "Denna del belyser hur skiftet mot en alltmer skärm- och AI-baserad tillvaro påverkar den psykiska hälsan och formar vår sociala samvaro. Innehållet visar hur generativ AI kan erbjuda en tillfällig lindring mot ensamhet genom att ge en känsla av att bli hörd, men varnar samtidigt för de dolda riskerna med virtuella relationer. Slutsatsen är att smarttelefoner och AI-kompanjoner riskerar att fördjupa den sociala isoleringen, tränga undan mänsklig interaktion och skapa en generation som är ständigt uppkopplad men djupt ensam.",
+        shortContent: (
+          <>
+            Denna del belyser hur skiftet mot en alltmer skärm- och AI-baserad tillvaro påverkar den psykiska hälsan och formar vår sociala samvaro. Innehållet visar hur <span className="font-bold text-solus-text">generativ AI kan erbjuda en tillfällig lindring mot ensamhet</span> genom att ge en känsla av att bli hörd, men <span className="font-bold text-solus-text">varnar samtidigt för de dolda riskerna med virtuella relationer</span>. Slutsatsen är att <span className="font-bold text-solus-text">smarttelefoner och AI-kompanjoner riskerar att fördjupa den sociala isoleringen</span>, tränga undan mänsklig interaktion och skapa en generation som är ständigt uppkopplad men djupt ensam.
+          </>
+        ),
         fullContent: (
           <div className="space-y-24">
             <div className="pt-6 border-t border-solus-accent/10">
@@ -391,7 +395,7 @@ const stepContent: Record<string, StepContent> = {
                   <h4 className="text-xl font-serif font-semibold text-solus-text">The Anxious Generation - Jonathan Haidt</h4>
                   <div className="space-y-4 text-base text-solus-text">
                     <p>
-                      Jonathan Haidt analyserar hur barndomen genomgick en genomgripande förändring mellan åren 2010 och 2015, en period han benämner som den stora omkopplingen (The Great Rewiring ). Övergången från en lekbaserad till en skärmbaserad tillvaro har resulterat i en epidemi av psykisk ohälsa, med kraftigt ökade nivåer av ångest och depression hos generationen född efter 1995. Denna utveckling har lett till en omfattande social deprivation eftersom den fysiska samvaron med vänner minskade dramatiskt när smartphonen blev norm. Haidt belyser hur tekniken har skapat en generation som är ständigt uppkopplad, men samtidigt mer ensam och isolerad än någonsin.
+                      Jonathan Haidt analyserar hur barndomen genomgick en omfattande förändring mellan åren 2010 och 2015, en period han benämner som den stora omkopplingen (The Great Rewiring ). Övergången från en lekbaserad till en skärmbaserad tillvaro har resulterat i en epidemi av psykisk ohälsa, med kraftigt ökade nivåer av ångest och depression hos generationen född efter 1995. Denna utveckling har lett till en omfattande social deprivation eftersom den fysiska samvaron med vänner minskade dramatiskt när smartphonen blev norm. Haidt belyser hur tekniken har skapat en generation som är ständigt uppkopplad, men samtidigt mer ensam och isolerad än någonsin.
                     </p>
                   </div>
                 </div>
@@ -412,7 +416,7 @@ const stepContent: Record<string, StepContent> = {
         title: "Omvärldsanalys",
         shortContent: (
           <>
-            Genom en kartläggning av området identifieras både etablerade mänskliga stödfunktioner och framväxande tekniska alternativ som adresserar ensamhet. Analysen sträcker sig från röststyrda sällskapsrobotar för äldre till forskningsnätverk och nationella stödlinjer. Syftet är att synliggöra marknadens begränsningar och identifiera inom vilka områden det finns utrymme för nya, innovativa designlösningar.
+            Genom en kartläggning av området identifieras både etablerade mänskliga stödfunktioner och framväxande tekniska alternativ som adresserar ensamhet. Analysen sträcker sig från röststyrda sällskapsrobotar för äldre till forskningsnätverk och nationella stödlinjer. <span className="font-bold text-solus-text">Syftet</span> är att <span className="font-bold text-solus-text">synliggöra marknadens begränsningar</span> och <span className="font-bold text-solus-text">identifiera</span> inom <span className="font-bold text-solus-text">vilka områden</span> det finns utrymme för nya, innovativa <span className="font-bold text-solus-text">designlösningar</span>.
             <div className="h-8" />
             <hr className="border-solus-accent/20" />
             <div className="h-8" />
@@ -423,8 +427,12 @@ const stepContent: Record<string, StepContent> = {
             {[
               {
                 name: "ElliQ",
-                desc: "ElliQ är en AI-driven sällskapsrobot framtagen för äldre som bor hemma. Roboten är utformad för att hjälpa äldre att åldras på ett hälsosamt sätt och erbjuder daglig konversation, påminnelser om mediciner och hälsouppföljning.",
-                extra: "Syftet är att motverka ensamhet och ge trygghet åt både användaren och dennes anhöriga. ElliQ är en fristående röstaktiverad enhet som inte kräver en separat telefon eller dator, och den är personligt anpassad för en enskild användare. Företaget bakom produkten är Intuition Robotics, med säte i San Francisco. Notera: Den är för närvarande dyr och inte tillgänglig utanför USA.",
+                desc: "ElliQ är en AI driven sällskapsrobot framtagen för äldre som bor hemma. Roboten är utformad för att hjälpa äldre att åldras på ett hälsosamt sätt och erbjuder daglig konversation, påminnelser om mediciner och hälsouppföljning.",
+                extra: (
+                  <>
+                    Syftet är att motverka ensamhet och ge trygghet åt både användaren och dennes anhöriga. ElliQ är en fristående röstaktiverad enhet som inte kräver en separat telefon eller dator, och den är personligt anpassad för en enskild användare. Företaget bakom produkten är Intuition Robotics, med säte i San Francisco. <span className="italic">Notera: Den är för närvarande dyr och inte tillgänglig utanför USA.</span>
+                  </>
+                ),
                 url: "https://elliq.com/"
               },
               {
@@ -441,19 +449,19 @@ const stepContent: Record<string, StepContent> = {
               },
               {
                 name: "Pi",
-                desc: "Pi är en AI-driven kompanjon utvecklad av Inflection AI, med fokus på emotionellt intelligent och människocentrerad AI. Pi beskrivs som den första emotionellt intelligenta AI:n.",
+                desc: "Pi är en AI driven kompanjon utvecklad av Inflection AI, med fokus på emotionellt intelligent och människocentrerad AI. Pi beskrivs som den första emotionellt intelligenta AI:n.",
                 extra: "Pi är utformad för att vara nyfiken och vänlig, alltid redo att lyssna och samtala. Användaren kan prata med Pi om allt från stora livsbeslut till vardagliga tankar. Fokus ligger inte på att utföra uppgifter utan på att erbjuda ett genuint, tålmodigt och icke-dömande samtal.",
                 url: "https://hey.pi.ai/"
               },
               {
                 name: "Replika",
-                desc: "Replika är en AI-driven kompanjon lanserad 2017 vars uttalade syfte är att motverka ensamhet och ge emotionellt stöd genom att erbjuda ett icke-dömande sällskap.",
+                desc: "Replika är en AI driven kompanjon lanserad 2017 vars uttalade syfte är att motverka ensamhet och ge emotionellt stöd genom att erbjuda ett icke-dömande sällskap.",
                 extra: "Plattformen ökade kraftigt i popularitet under pandemin när många sökte sällskap. Möjligheten att nå Replika när som helst upplevs av många som en buffert mot ensamhet. Kritiker menar dock att AI-kompanjoner riskerar att bli en krycka som hindrar användare från att söka de mänskliga relationer som egentligen behövs.",
                 url: "https://replika.com/"
               },
               {
                 name: "Saner.AI",
-                desc: "Saner.AI är en AI-driven produktivitetsassistent framtagen för personer med ADHD samt kunskapsarbetare som har svårt att hantera stora mängder information.",
+                desc: "Saner.AI är en AI driven produktivitetsassistent framtagen för personer med ADHD samt kunskapsarbetare som har svårt att hantera stora mängder information.",
                 extra: "Verktyget hjälper användaren att organisera sin kunskap utan att bli överväldigad, med målet att minska den mentala belastningen. Plattformen samlar information från e-post, Drive och Slack. En central del är AI-assistenten Skai, som lär sig av användarens anteckningar och organiserar dem automatiskt.",
                 url: "https://www.saner.ai/"
               },
@@ -498,13 +506,13 @@ const stepContent: Record<string, StepContent> = {
     body: (
       <div className="space-y-6">
         <p>
-          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteratursökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik lucka och ett underliggande behov på marknaden. Där det idag finns många AI-kompanjoner för att dämpa din ensamhet, men inte en AI-coach som ska hjälpa dig bryta ensamheten.
+          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteratursökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik lucka och ett underliggande behov på marknaden. Där det <span className="font-bold text-solus-text">idag finns många AI-kompanjoner för att dämpa din ensamhet, men inte en AI-coach som ska hjälpa dig bryta ensamheten.</span>
         </p>
         <p>
-          Med utgångspunkt i detta utvecklades konceptet Solus. Solus är en AI-driven coach utformad för att hjälpa ensamma och socialt isolerade människor att stödja dem i att våga ta det allra första steget ut ur sin ensamhet. Genom att använda ett textbaserat gränssnitt i stället för röstkommunikation sänks tröskeln för att dela med sig av känsliga erfarenheter till en samtalspartner som inte dömer.
+          Med utgångspunkt i detta utvecklades konceptet Solus. Solus är en AI driven coach utformad för att hjälpa ensamma och socialt isolerade människor att stödja dem i att våga ta det allra första steget ut ur sin ensamhet. Genom att använda ett textbaserat gränssnitt i stället för röstkommunikation sänks tröskeln för att dela med sig av känsliga erfarenheter till en samtalspartner som inte dömer.
         </p>
         <p>
-          Genom att integrera handlingsplanen EASE vilar Solus på kunskap och en grund som stöds av Folkhälsomyndigheten och Socialstyrelsen. Målet är att Solus ska fungera som en coach och inte en kompanjon, vilket innebär att framgången mäts i att användaren till slut känner sig reado att avsluta tjänsten. Designen av Solus strävar efter att uppfylla målgruppens behov av att bryta sin isolering, vilket uppnås genom att systemet anpassar sig till användarens specifika situation vid varje samtal.
+          Genom att integrera handlingsplanen EASE vilar Solus på kunskap och en grund som stöds av Folkhälsomyndigheten och Socialstyrelsen. <span className="font-bold text-solus-text">Målet är att Solus ska fungera som en coach och inte en kompanjon</span>, vilket innebär att framgången mäts i att användaren till slut känner sig redo att avsluta tjänsten. Designen av Solus strävar efter att uppfylla målgruppens behov av att bryta sin isolering, vilket uppnås genom att systemet anpassar sig till användarens specifika situation vid varje samtal.
         </p>
         <p>
           Här formuleras designprinciper och konceptuella lösningar som adresserar de identifierade behoven hos användarna.
@@ -669,7 +677,13 @@ export default function ProcessDetail() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className={`${id === '01' ? 'text-5xl md:text-7xl lg:text-8xl' : 'text-7xl md:text-9xl'} font-serif leading-[0.85] text-solus-text mb-12`}>
+          <h1 className={`${
+            id === '01' 
+              ? 'text-3xl sm:text-5xl md:text-7xl lg:text-8xl' 
+              : id === '02'
+              ? 'text-4xl sm:text-6xl md:text-8xl lg:text-9xl'
+              : 'text-5xl sm:text-7xl md:text-9xl'
+          } font-serif leading-[0.85] text-solus-text mb-12`}>
             {content.subtitle}<span className="text-solus-accent">.</span>
           </h1>
           <div>

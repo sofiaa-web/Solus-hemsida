@@ -15,14 +15,14 @@ const steps = [
     desc: (
       <div className="space-y-6">
         <p>
-          Arbetet med litteratursökningen och omvärldsanalysen har <span className="font-bold text-solus-text">gett Solus en tydlig teoretisk och praktisk grund</span> att stå på. Processen har resulterat i avgörande designprinciper genom att visa <span className="font-bold text-solus-text">att textbaserade gränssnitt skapar störst psykologisk trygghet</span>, minskar den kognitiva belastningen och underlättar kommunikation kring sårbarheter jämfört med röstbaserade system.
+          Arbetet med litteratursökningen och omvärldsanalysen har <span className="font-bold text-solus-text">gett Solus en tydlig teoretisk grund</span> att stå på. Processen har resulterat i avgörande designprinciper genom att visa <span className="font-bold text-solus-text">att textbaserade gränssnitt skapar störst psykologisk trygghet</span>, minskar den kognitiva belastningen och underlättar kommunikation kring sårbarheter jämfört med röstbaserade system.
         </p>
       </div>
     ),
     details: (
       <div className="space-y-6">
         <p className="text-solus-muted font-light leading-relaxed">
-          Genom en <span className="font-bold text-solus-text">omvärldsanalys och kartläggning</span> av området identifieras både etablerade mänskliga stödfunktioner och framväxande tekniska alternativ som adresserar ensamhet. Analysen sträcker sig från röststyrda sällskapsrobotar för äldre till forskningsnätverk och nationella stödlinjer. <span className="font-bold text-solus-text">Syftet är att synliggöra marknadens begränsningar och identifiera inom vilka områden det finns utrymme för nya, innovativa designlösningar.</span>
+          Genom en <span className="font-bold text-solus-text">omvärldsanalys och kartläggning</span> av området identifieras både etablerade mänskliga stödfunktioner och framväxande tekniska alternativ som adresserar ensamhet. Analysen sträcker sig från röststyrda sällskapsrobotar för äldre till forskningsnätverk och nationella stödlinjer. <span className="font-bold text-solus-text">Syftet</span> är att <span className="font-bold text-solus-text">synliggöra marknadens begränsningar</span> och <span className="font-bold text-solus-text">identifiera</span> inom <span className="font-bold text-solus-text">vilka områden</span> det finns utrymme för nya, innovativa <span className="font-bold text-solus-text">designlösningar</span>.
         </p>
       </div>
     ),
@@ -33,13 +33,13 @@ const steps = [
     desc: (
       <div className="space-y-6">
         <p>
-          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteratursökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik lucka och ett underliggande behov på marknaden. Där det idag finns många AI-kompanjoner för att dämpa din ensamhet, men inte en AI-coach som ska hjälpa dig bryta ensamheten.
+          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteratursökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik lucka och ett underliggande behov på marknaden. Där det <span className="font-bold text-solus-text">idag finns många AI-kompanjoner för att dämpa din ensamhet, men inte en AI-coach som ska hjälpa dig bryta ensamheten.</span>
         </p>
         <p>
-          Med utgångspunkt i detta utvecklades konceptet Solus. Solus är en AI-driven coach utformad för att hjälpa ensamma och socialt isolerade människor att stödja dem i att våga ta det allra första steget ut ur sin ensamhet.
+          Med utgångspunkt i detta utvecklades konceptet Solus. Solus är en AI driven coach utformad för att hjälpa ensamma och socialt isolerade människor att stödja dem i att våga ta det allra första steget ut ur sin ensamhet.
         </p>
         <p>
-          Genom att integrera handlingsplanen EASE vilar Solus på kunskap och en grund som stöds av Folkhälsomyndigheten och Socialstyrelsen. Målet är att Solus ska fungera som en coach och inte en kompanjon, vilket innebär att framgången mäts i att användaren till slut känner sig redo att avsluta tjänsten.
+          Genom att integrera handlingsplanen EASE vilar Solus på kunskap och en grund som stöds av Folkhälsomyndigheten och Socialstyrelsen. <span className="font-bold text-solus-text">Målet är att Solus ska fungera som en coach och inte en kompanjon</span>, vilket innebär att framgången mäts i att användaren till slut känner sig redo att avsluta tjänsten.
         </p>
       </div>
     ),
@@ -51,13 +51,13 @@ const steps = [
     desc: (
       <div className="space-y-6">
         <p>
-          När konceptet Solus var fastställt inleddes en iterativ designprocess för att definiera Solus beteende och bygga upp dess kunskapsbas inom området. Ett tidigt steg var att lära Solus att arbeta utifrån behandlingsplanen EASE och UCLA Loneliness Scale, för att både kunna bedöma graden av ensamhet hos en användare och vägleda användaren mot sociala handlingar. Parallellt med att forma Solus beteende ingick det också att säkerställa att Solus hanterade känsliga samtal på ett lämpligt sätt, till exempel när en användare uttryckte negativa tankar kring sin livslust.
+          När konceptet Solus var fastställt inleddes en <span className="font-bold text-solus-text">iterativ designprocess</span> för att definiera Solus beteende och bygga upp dess kunskapsbas inom området. Ett tidigt steg var att lära Solus att arbeta utifrån behandlingsplanen <span className="font-bold text-solus-text">EASE och UCLA Loneliness Scale</span>, för att både kunna <span className="font-bold text-solus-text">bedöma graden av ensamhet</span> hos en användare och <span className="font-bold text-solus-text">vägleda användaren mot sociala handlingar</span>. Parallellt med att forma Solus beteende ingick det också att säkerställa att Solus hanterade känsliga samtal på ett lämpligt sätt, till exempel när en användare uttryckte negativa tankar kring sin livslust.
         </p>
         <p className="text-sm md:text-base font-mono tracking-wider text-solus-accent uppercase pt-4 font-semibold text-center">
           Testa &rarr; Justera prompts &rarr; Repeat
         </p>
         <p>
-          Användartester med surrogatanvändarna genomfördes löpande under den iterativa processen, där Solus reviderades och förbättrades mellan varje test. Testerna varierade i format. Vissa sessioner var övervakade, medan andra genomfördes självständigt av surrogatanvändaren för att sedan följas upp i en gemensam diskussion. Varje användartest omfattade 40 meddelanden, där användaren skickade 20 och Solus svarade 20 gånger, vilket bedömdes motsvara ett lagom långt samtal. Totalt genomfördes sex surrogattest.
+          <span className="font-bold text-solus-text">Användartester med surrogatanvändarna genomfördes löpande</span> under den iterativa processen, där Solus reviderades och förbättrades mellan varje test. Testerna varierade i format. Vissa sessioner var övervakade, medan andra genomfördes självständigt av surrogatanvändaren för att sedan följas upp i en gemensam diskussion. Varje användartest omfattade 40 meddelanden, där användaren skickade 20 och Solus svarade 20 gånger, vilket bedömdes motsvara ett lagom långt samtal. Totalt genomfördes sex surrogattest.
         </p>
       </div>
     ),
@@ -83,17 +83,20 @@ const steps = [
     desc: (
       <div className="space-y-6">
         <p>
-          Ofrivillig ensamhet och social isolering är ett växande folkhälso- och samhällsproblem i Sverige som i dag drabbar unga vuxna och äldre särskilt hårt. Målgruppen för detta projekt är därför uppdelad i två specifika åldersgrupper som på olika sätt drabbas hårt av ofrivillig ensamhet: unga vuxna (18–25 år) och äldre (70+ år).
+          Ofrivillig ensamhet och social isolering är ett växande folkhälso- och samhällsproblem i Sverige som i dag drabbar unga vuxna och äldre särskilt hårt. <span className="font-bold text-solus-text">Målgruppen</span> för detta projekt är därför uppdelad i två specifika åldersgrupper som på olika sätt drabbas hårt av <span className="font-bold text-solus-text">ofrivillig ensamhet: unga vuxna (18–25 år) och äldre (70+ år)</span>.
         </p>
         <p>
-          Eftersom målgrupperna var svåra att rekrytera, skapades två personas, Saga (20 år) och Leif (79 år), som bygger på data från Folkhälsomyndigheten. Genom att testa hemsidans gränssnitt mot dessa AI-personas skapades en bild av hur ett verkligt användartillfälle skulle kunna se ut, vilket gav viktiga insikter om samtalen och tonläget.
+          Eftersom målgrupperna var svåra att rekrytera, skapades <span className="font-bold text-solus-text">två personas, Saga (20 år) och Leif (79 år)</span>, som bygger på data från Folkhälsomyndigheten. Genom att testa hemsidans gränssnitt mot dessa AI-personas skapades en bild av hur ett verkligt användartillfälle skulle kunna se ut, vilket gav viktiga insikter om samtalen och tonläget.
         </p>
       </div>
     ),
     details: (
       <div className="space-y-6">
         <p className="text-solus-muted font-light leading-relaxed">
-          Som ett komplement genomfördes surrogattester, vilket innebär att utomstående personer fick testa Solus för att samla in teknisk kritik och identifiera brister i användarvänlighet och flöden.
+          Att <span className="font-bold text-solus-text">bedöma</span> själva <span className="font-bold text-solus-text">innehållet i dialogerna</span> mellan en persona och Solus blir dock <span className="font-bold text-solus-text">subjektivt</span>, eftersom det i slutändan handlar om kvalificerade gissningar kring hur en verklig person ur målgruppen faktiskt skulle uppleva bemötandet.
+        </p>
+        <p className="text-solus-muted font-light leading-relaxed">
+          <span className="font-bold text-solus-text">Som ett komplement genomfördes surrogattester</span>, vilket innebär att utomstående personer fick testa Solus för att samla in teknisk kritik och identifiera brister i användarvänlighet och flöden.
         </p>
       </div>
     ),
@@ -104,14 +107,14 @@ const steps = [
     desc: (
       <div className="space-y-6">
         <p>
-          Arbetet resulterade i prototypen Solus med ambitionen att skapa meningsfull förändring i människors liv. Solus är designad utifrån gedigen kunskap inom området och fyller ett tomrum som ännu inte täcks av befintliga lösningar. Genom att utgå från användarens faktiska behov och önskemål utgör Solus en unik lösning på ett specifikt problem.
+          Arbetet resulterade i prototypen Solus med ambitionen att skapa <span className="font-bold text-solus-text">meningsfull förändring</span> i människors liv. Solus är designad utifrån gedigen <span className="font-bold text-solus-text">kunskap</span> inom området och <span className="font-bold text-solus-text">fyller ett tomrum</span> som ännu inte täcks av befintliga lösningar. Genom att utgå från <span className="font-bold text-solus-text">användarens</span> faktiska <span className="font-bold text-solus-text">behov och önskemål</span> utgör <span className="font-bold text-solus-text">Solus en unik lösning på ett specifikt problem.</span>
         </p>
       </div>
     ),
     details: (
       <div className="space-y-6">
         <p className="text-solus-muted font-light leading-relaxed">
-          För att avgränsa projektet gjordes ett medvetet val att inte inkludera en inloggningsfunktion där användare kan spara sina konversationer. Istället raderas konversationshistoriken varje gång sidan laddas om. Motiveringen är att prototypen i sin nuvarande fas inte kräver dessa funktioner. Innan de implementeras behövs mer omfattande användartester med den faktiska målgruppen, för att utvärdera hur Solus fungerar över tid. Att konversationshistorik inte sparas är därmed ett medvetet och passande val för det stadium prototypen befinner sig i.
+          För att <span className="font-bold text-solus-text">avgränsa</span> projektet gjordes ett medvetet val att inte inkludera en inloggningsfunktion där användare kan spara sina konversationer. Istället raderas konversationshistoriken varje gång sidan laddas om. Motiveringen är att prototypen i sin nuvarande fas inte kräver dessa funktioner. Innan de implementeras behövs <span className="font-bold text-solus-text">mer omfattande användartester</span> med den faktiska målgruppen, för att utvärdera hur Solus fungerar över tid. Att konversationshistorik inte sparas är därmed ett medvetet och passande val för det stadium prototypen befinner sig i.
         </p>
       </div>
     ),
@@ -123,7 +126,7 @@ export default function Process() {
   return (
     <PageLayout>
       <Section className="mb-20">
-        <h1 className="text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">Designprocessen<span className="text-solus-accent">.</span></h1>
+        <h1 className="text-4xl sm:text-7xl md:text-9xl font-serif leading-[0.85] text-solus-text mb-8">Designprocessen<span className="text-solus-accent">.</span></h1>
 
         
         <div className="flex flex-wrap gap-4">
@@ -168,7 +171,7 @@ export default function Process() {
                 noScrollAnimation={step.title === "Metod" || step.title === "Användartester och målgrupp"}
                 className="grid md:grid-cols-2 gap-12 items-start border-t border-solus-accent/10 pt-12"
               >
-                <div className={step.title === "Metod" || step.title === "Användartester och målgrupp" ? "" : "sticky top-32"}>
+                <div className={step.title === "Metod" || step.title === "Användartester och målgrupp" ? "" : "md:sticky md:top-32"}>
                   <h2 className="text-3xl font-medium mb-6">{step.title}</h2>
                   <div className="text-lg leading-relaxed text-solus-muted font-light">
                     {step.desc}
