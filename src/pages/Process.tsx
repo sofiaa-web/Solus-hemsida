@@ -46,6 +46,30 @@ const steps = [
     link: "/process/02"
   },
   {
+    title: "Metod",
+    desc: (
+      <div className="space-y-6">
+        <p>
+          För att utveckla Solus till ett tryggt och effektivt verktyg har arbetet utgått från en <span className="font-bold text-solus-text">användarcentrerad och iterativ designmetodik</span>. Genom att kombinera akademisk forskning med praktisk formgivning har designbesluten kontinuerligt testats och förfinats.
+        </p>
+        <p>
+          En central metod har varit att översätta teoretiska ramverk – som folkhälsodata och EASE-handlingsplanen – till konkreta interaktionsmönster som sänker användarens kognitiva och emotionella trösklar.
+        </p>
+      </div>
+    ),
+    details: (
+      <div className="space-y-6">
+        <p className="text-solus-muted font-light leading-relaxed">
+          Arbetet har präglats av att snabbt visualisera idéer och testa dem. Genom att iterera gränssnittet i flera steg – från enkla skisser till interaktiva prototyper – har feedback från surrogattester kunnat integreras löpande.
+        </p>
+        <p className="text-solus-muted font-light leading-relaxed">
+          Metodvalet har fokuserat på att säkerställa högsta möjliga användbarhet och att skapa en känsla av psykologisk trygghet i gränssnittets design.
+        </p>
+      </div>
+    ),
+    link: "/tester"
+  },
+  {
     title: "Användartester och målgrupp",
     desc: (
       <div className="space-y-6">
@@ -157,7 +181,7 @@ export default function Process() {
                       </div>
                     </div>
                   )}
-                  {step.title !== "Syfte och koncept" && (
+                  {step.title !== "Syfte och koncept" && step.title !== "Metod" && (
                     <div className="flex justify-end pt-2">
                       <Link 
                         to={step.link}
