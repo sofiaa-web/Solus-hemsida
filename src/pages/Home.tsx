@@ -56,6 +56,30 @@ export default function Home() {
               <p>
                 Ofrivillig ensamhet och social isolering är ett växande problem som har allvarliga konsekvenser för både den psykiska och fysiska hälsan. Att ta sig ur ensamhet på egen hand kan kännas övermäktigt. Solus sänker tröskeln för att hjälpa dig ta det allra första steget mot förändring. 
               </p>
+
+              <div className="grid md:grid-cols-2 gap-6 pt-6 font-sans">
+                {/* Saga Quote */}
+                <div className="bg-white border border-solus-border p-6 rounded-lg shadow-sm flex flex-col justify-between">
+                  <p className="text-base text-solus-muted italic leading-relaxed font-light mb-6">
+                    "Det känns som att ha någon att prata med som lyssnar utan att döma. Efter några samtal har jag känt mig mer bekväm med att ta kontakt med nya personer i skolan."
+                  </p>
+                  <div>
+                    <h4 className="text-sm font-semibold text-solus-text leading-tight">Saga</h4>
+                    <p className="text-xs text-solus-muted">20 år, studerande</p>
+                  </div>
+                </div>
+
+                {/* Leif Quote */}
+                <div className="bg-white border border-solus-border p-6 rounded-lg shadow-sm flex flex-col justify-between">
+                  <p className="text-base text-solus-muted italic leading-relaxed font-light mb-6">
+                    "Jag var skeptisk mot 'digitala system' först, men den har gett mig modet att börja söka mig ut till lokala träffpunkter."
+                  </p>
+                  <div>
+                    <h4 className="text-sm font-semibold text-solus-text leading-tight">Leif</h4>
+                    <p className="text-xs text-solus-muted">79 år, pensionär</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -66,7 +90,7 @@ export default function Home() {
           <div className="bg-white border border-solus-border p-8 hover:border-solus-accent transition-all">
             <div className="mb-6">
               <h3 className="font-serif text-xl font-medium text-solus-text leading-relaxed">
-                Prototypen är inte tillgänglig för allmänheten på grund av driftskostnader, utan är i detta skede avsedd för examinatorn. Länk till prototypen kan eventuellt lämnas ut på förfrågan.
+                Prototypen är inte tillgänglig för allmänheten på grund av interaktionskostnader, utan är i detta skede avsedd för examinatorn. Länk till prototypen kan eventuellt lämnas ut på förfrågan.
               </h3>
             </div>
             <div className="flex flex-col space-y-2">

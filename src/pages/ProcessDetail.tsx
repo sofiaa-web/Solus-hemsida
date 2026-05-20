@@ -498,7 +498,7 @@ const stepContent: Record<string, StepContent> = {
     body: (
       <div className="space-y-6">
         <p>
-          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteratursökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik kunskapslucka och ett underliggande behov på marknaden. 
+          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteratursökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik lucka och ett underliggande behov på marknaden. Där det idag finns många AI-kompanjoner för att dämpa din ensamhet, men inte en AI-coach som ska hjälpa dig bryta ensamheten.
         </p>
         <p>
           Med utgångspunkt i detta utvecklades konceptet Solus. Solus är en AI-driven coach utformad för att hjälpa ensamma och socialt isolerade människor att stödja dem i att våga ta det allra första steget ut ur sin ensamhet. Genom att använda ett textbaserat gränssnitt i stället för röstkommunikation sänks tröskeln för att dela med sig av känsliga erfarenheter till en samtalspartner som inte dömer.
@@ -584,21 +584,6 @@ const stepContent: Record<string, StepContent> = {
         title: "Framtidsutsikter",
         shortContent: "Fokus ligger nu på framtida expansion och hur Solus kan fortsätta att utvecklas i takt med användarnas behov.",
         fullContent: "Framtida utveckling innefattar utforskande av nya sätt att integrera Solus i vardagen på ett sätt som ytterligare minskar känslan av ensamhet."
-      },
-      {
-        title: "Grafisk profil",
-        shortContent: "För att se hur konceptet översattes till en visuell identitet, utforska projektets grafiska profil.",
-        fullContent: (
-          <div className="pt-8">
-            <Link 
-              to="/grafisk-design" 
-              className="inline-flex items-center gap-2 text-solus-accent hover:underline group font-medium"
-            >
-              <span>Gå till Grafisk Profil</span>
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
-        )
       }
     ]
   }

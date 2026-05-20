@@ -1,7 +1,14 @@
 import { motion } from "motion/react";
 import type { ReactNode } from "react";
 
-export function Section({ children, className, id }: { children: ReactNode, className?: string, id?: string }) {
+export function Section({ children, className, id, noScrollAnimation }: { children: ReactNode, className?: string, id?: string, noScrollAnimation?: boolean }) {
+  if (noScrollAnimation) {
+    return (
+      <section id={id} className={className}>
+        {children}
+      </section>
+    );
+  }
   return (
     <motion.section
       id={id}

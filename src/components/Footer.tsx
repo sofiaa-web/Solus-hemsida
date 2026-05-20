@@ -8,7 +8,7 @@ export function Footer() {
           <div className="space-y-6">
             <div className="text-[10px] tracking-[0.2em] text-gray-900 uppercase font-bold mb-2">Information</div>
             <p className="normal-case font-light text-sm leading-relaxed max-w-xl tracking-normal text-gray-500">
-              Prototypen är inte tillgänglig för allmänheten på grund av driftskostnader, utan är i detta skede avsedd för examinatorn. Länk till prototypen kan eventuellt lämnas ut på förfrågan.
+              Prototypen är inte tillgänglig för allmänheten på grund av interaktionskostnader, utan är i detta skede avsedd för examinatorn. Länk till prototypen kan eventuellt lämnas ut på förfrågan.
             </p>
           </div>
 

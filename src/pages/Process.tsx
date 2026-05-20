@@ -1,6 +1,7 @@
 import { PageLayout, Section } from "@/src/components/Layout";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import ByggeImg from "@/src/components/bygge 1.png";
 
 const steps = [
   {
@@ -32,7 +33,7 @@ const steps = [
     desc: (
       <div className="space-y-6">
         <p>
-          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteratursökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik kunskapslucka och ett underliggande behov på marknaden. 
+          <span className="font-bold text-solus-text">Syftet är att genom design skapa en avsiktlig förändring för individer som lever i ofrivillig ensamhet.</span> Litteratursökningen och omvärldsanalysen bidrog med värdefull kunskap som synliggjorde en specifik lucka och ett underliggande behov på marknaden. Där det idag finns många AI-kompanjoner för att dämpa din ensamhet, men inte en AI-coach som ska hjälpa dig bryta ensamheten.
         </p>
         <p>
           Med utgångspunkt i detta utvecklades konceptet Solus. Solus är en AI-driven coach utformad för att hjälpa ensamma och socialt isolerade människor att stödja dem i att våga ta det allra första steget ut ur sin ensamhet.
@@ -50,20 +51,28 @@ const steps = [
     desc: (
       <div className="space-y-6">
         <p>
-          För att utveckla Solus till ett tryggt och effektivt verktyg har arbetet utgått från en <span className="font-bold text-solus-text">användarcentrerad och iterativ designmetodik</span>. Genom att kombinera akademisk forskning med praktisk formgivning har designbesluten kontinuerligt testats och förfinats.
+          När konceptet Solus var fastställt inleddes en iterativ designprocess för att definiera Solus beteende och bygga upp dess kunskapsbas inom området. Ett tidigt steg var att lära Solus att arbeta utifrån behandlingsplanen EASE och UCLA Loneliness Scale, för att både kunna bedöma graden av ensamhet hos en användare och vägleda användaren mot sociala handlingar. Parallellt med att forma Solus beteende ingick det också att säkerställa att Solus hanterade känsliga samtal på ett lämpligt sätt, till exempel när en användare uttryckte negativa tankar kring sin livslust.
+        </p>
+        <p className="text-sm md:text-base font-mono tracking-wider text-solus-accent uppercase pt-4 font-semibold text-center">
+          Testa &rarr; Justera prompts &rarr; Repeat
         </p>
         <p>
-          En central metod har varit att översätta teoretiska ramverk – som folkhälsodata och EASE-handlingsplanen – till konkreta interaktionsmönster som sänker användarens kognitiva och emotionella trösklar.
+          Användartester med surrogatanvändarna genomfördes löpande under den iterativa processen, där Solus reviderades och förbättrades mellan varje test. Testerna varierade i format. Vissa sessioner var övervakade, medan andra genomfördes självständigt av surrogatanvändaren för att sedan följas upp i en gemensam diskussion. Varje användartest omfattade 40 meddelanden, där användaren skickade 20 och Solus svarade 20 gånger, vilket bedömdes motsvara ett lagom långt samtal. Totalt genomfördes sex surrogattest.
         </p>
       </div>
     ),
     details: (
       <div className="space-y-6">
+        <div className="border border-solus-accent/10 rounded-lg overflow-hidden bg-white/50 p-2">
+          <img 
+            src={ByggeImg} 
+            alt="Prototypbygge och iterativ metod" 
+            className="w-full h-auto rounded-md shadow-sm"
+            referrerPolicy="no-referrer"
+          />
+        </div>
         <p className="text-solus-muted font-light leading-relaxed">
-          Arbetet har präglats av att snabbt visualisera idéer och testa dem. Genom att iterera gränssnittet i flera steg – från enkla skisser till interaktiva prototyper – har feedback från surrogattester kunnat integreras löpande.
-        </p>
-        <p className="text-solus-muted font-light leading-relaxed">
-          Metodvalet har fokuserat på att säkerställa högsta möjliga användbarhet och att skapa en känsla av psykologisk trygghet i gränssnittets design.
+          Solus utvecklades inledningsvis med hjälp av Google AI Studio och förfinades sedan iterativt direkt i GitHub. Solus är publicerad via Vercel och är integrerad med Groqs API.
         </p>
       </div>
     ),
@@ -76,13 +85,13 @@ const steps = [
         <p>
           Ofrivillig ensamhet och social isolering är ett växande folkhälso- och samhällsproblem i Sverige som i dag drabbar unga vuxna och äldre särskilt hårt. Målgruppen för detta projekt är därför uppdelad i två specifika åldersgrupper som på olika sätt drabbas hårt av ofrivillig ensamhet: unga vuxna (18–25 år) och äldre (70+ år).
         </p>
+        <p>
+          Eftersom målgrupperna var svåra att rekrytera, skapades två personas, Saga (20 år) och Leif (79 år), som bygger på data från Folkhälsomyndigheten. Genom att testa hemsidans gränssnitt mot dessa AI-personas skapades en bild av hur ett verkligt användartillfälle skulle kunna se ut, vilket gav viktiga insikter om samtalen och tonläget.
+        </p>
       </div>
     ),
     details: (
       <div className="space-y-6">
-        <p className="text-solus-muted font-light leading-relaxed">
-          Eftersom målgrupperna var svåra att rekrytera, skapades två personas, Saga (20 år) och Leif (79 år), som bygger på data från Folkhälsomyndigheten. Genom att testa hemsidans gränssnitt mot dessa AI-personas skapades en bild av hur ett verkligt användartillfälle skulle kunna se ut, vilket gav viktiga insikter om samtalen och tonläget.
-        </p>
         <p className="text-solus-muted font-light leading-relaxed">
           Som ett komplement genomfördes surrogattester, vilket innebär att utomstående personer fick testa Solus för att samla in teknisk kritik och identifiera brister i användarvänlighet och flöden.
         </p>
@@ -92,8 +101,20 @@ const steps = [
   },
   {
     title: "Resultat",
-    desc: "Solus utvecklades inledningsvis med hjälp av Google AI Studio och förfinades sedan iterativt direkt i GitHub. Solus är publicerad via Vercel och är integrerad med Groqs API.",
-    details: "Finslipning av mikromotioner och visuell hierarki för att säkerställa högsta kvalitet.",
+    desc: (
+      <div className="space-y-6">
+        <p>
+          Arbetet resulterade i prototypen Solus med ambitionen att skapa meningsfull förändring i människors liv. Solus är designad utifrån gedigen kunskap inom området och fyller ett tomrum som ännu inte täcks av befintliga lösningar. Genom att utgå från användarens faktiska behov och önskemål utgör Solus en unik lösning på ett specifikt problem.
+        </p>
+      </div>
+    ),
+    details: (
+      <div className="space-y-6">
+        <p className="text-solus-muted font-light leading-relaxed">
+          För att avgränsa projektet gjordes ett medvetet val att inte inkludera en inloggningsfunktion där användare kan spara sina konversationer. Istället raderas konversationshistoriken varje gång sidan laddas om. Motiveringen är att prototypen i sin nuvarande fas inte kräver dessa funktioner. Innan de implementeras behövs mer omfattande användartester med den faktiska målgruppen, för att utvärdera hur Solus fungerar över tid. Att konversationshistorik inte sparas är därmed ett medvetet och passande val för det stadium prototypen befinner sig i.
+        </p>
+      </div>
+    ),
     link: "/process/03"
   }
 ];
@@ -143,8 +164,11 @@ export default function Process() {
                 </div>
               </Section>
             ) : (
-              <Section className="grid md:grid-cols-2 gap-12 items-start border-t border-solus-accent/10 pt-12">
-                <div className="sticky top-32">
+              <Section 
+                noScrollAnimation={step.title === "Metod" || step.title === "Användartester och målgrupp"}
+                className="grid md:grid-cols-2 gap-12 items-start border-t border-solus-accent/10 pt-12"
+              >
+                <div className={step.title === "Metod" || step.title === "Användartester och målgrupp" ? "" : "sticky top-32"}>
                   <h2 className="text-3xl font-medium mb-6">{step.title}</h2>
                   <div className="text-lg leading-relaxed text-solus-muted font-light">
                     {step.desc}
@@ -181,7 +205,7 @@ export default function Process() {
                       </div>
                     </div>
                   )}
-                  {step.title !== "Syfte och koncept" && step.title !== "Metod" && (
+                  {step.title !== "Syfte och koncept" && step.title !== "Metod" && step.title !== "Resultat" && (
                     <div className="flex justify-end pt-2">
                       <Link 
                         to={step.link}
